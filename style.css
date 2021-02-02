@@ -39,3 +39,45 @@
     grid-column: 6 / span 6;
 }
 /* #################################################### */
+
+/* This is for index3.html which is the Responsive Layout */
+.task-3-1.container {
+    display: grid;
+    height: 100vh;
+
+    grid-template-rows: auto auto 1fr auto auto auto;
+    gap: 24px;
+}
+
+/* For mobile or tablet layout */
+@media (min-width: 720px) {
+    .task-3-1.container {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto auto 1fr auto;
+    }
+
+    .task-3-1 .header {
+        grid-column: 1 / span 12;
+    }
+
+    .task-3-1 .navigation {
+        grid-column: 1 / span 12;
+    }
+
+    .task-3-1 .main {
+        grid-column: 3 / span 10;
+    }
+
+    .task-3-1 .sidebar {
+        grid-column: 1 / span 2;
+        grid-row: 3;
+    }
+
+    .task-3-1 .ads {
+        grid-column: 1 / span 2;
+    }
+
+    .task-3-1 .footer {
+        grid-column: 3 / span 10;
+    }
+}
