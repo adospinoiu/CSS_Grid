@@ -41,6 +41,7 @@
 /* #################################################### */
 
 /* This is for index3.html which is the Responsive Layout */
+/* OPTION 1: For mobile */
 .task-3-1.container {
     display: grid;
     height: 100vh;
@@ -49,7 +50,7 @@
     gap: 24px;
 }
 
-/* For mobile or tablet layout */
+/* OPTION 1: For tablet layout */
 @media (min-width: 720px) {
     .task-3-1.container {
         grid-template-columns: repeat(12, 1fr);
@@ -81,7 +82,8 @@
         grid-column: 3 / span 10;
     }
 }
-/* For desktop layout */
+
+/* OPTION 1: For desktop layout */
 @media (min-width: 1020px) {
     .task-3-1 .navigation {
         grid-column: 3 / span 8;
@@ -103,4 +105,46 @@
     .task-3-1 .footer {
         grid-column: 1 / span 12;
     }
+}
+
+/* OPTION 2: For mobile layout */
+.task-3-2.container {
+    display: grid;
+    height: 100vh;
+
+    gap: 24px;
+
+    grid-template-rows: auto auto 1fr auto auto auto;
+
+    grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "sidebar"
+        "ads"
+        "footer";
+}
+
+.task-3-2 .header {
+    grid-area: header;
+}
+
+.task-3-2 .navigation {
+    grid-area: nav;
+}
+
+.task-3-2 .ads {
+    grid-area: ads;
+}
+
+.task-3-2 .sidebar {
+    grid-area: sidebar;
+}
+
+.task-3-2 .main {
+    grid-area: main;
+}
+
+.task-3-2 .footer {
+    grid-area: footer;
 }
