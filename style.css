@@ -174,3 +174,17 @@
         grid-template-rows: auto auto 1fr auto;
     }
 }
+
+/* This is for index4.html which is the Responsive Layout */
+/* Reponsive layout WITHOUT @media query */
+.task-4.container {
+    display: grid;
+    gap: 24px;
+
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+}
+
+/* You can extend each individual */
+.task-4 .item-5 {
+    grid-column-end: span 2;
+}
