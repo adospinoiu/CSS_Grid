@@ -7,9 +7,24 @@
 } */
 
 /* This version uses the 'fraction method' to space the columns */
-.container {
+/* .container {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 50px 50px;
+    grid-gap: 3px;
+} */
+
+/* This version uses the 'repeat method' to space columns */
+/* .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 50px);
+    grid-gap: 3px;
+} */
+
+/* This is the short version of the 'repeat method' (row, column) */
+.container {
+    display: grid;
+    grid-template: repeat(2, 50px) / repeat(3, 1fr);
     grid-gap: 3px;
 }
