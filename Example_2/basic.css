@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(253, 253, 158);
+}
+
+div {
+    border: solid;
+    border-color: tomato;
+    text-align: center;
+}
