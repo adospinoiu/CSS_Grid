@@ -1,6 +1,15 @@
-.container {
+/* This version uses the 'pixel method' to space the columns */
+/* .container {
     display: grid;
     grid-template-columns: 100px auto 100px;
+    grid-template-rows: 50px 50px;
+    grid-gap: 3px;
+} */
+
+/* This version uses the 'fraction method' to space the columns */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 50px 50px;
     grid-gap: 3px;
 }
