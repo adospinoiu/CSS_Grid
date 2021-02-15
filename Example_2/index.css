@@ -49,7 +49,7 @@
     /* grid-column: 1 / span 2; */
     
     /* If you DON'T KNOW the number of columns you will eventually have */
-    /* grid-column: 1 / 11;
+    /* grid-column: 1 / -1;
 }
 
 .menu {
@@ -67,20 +67,20 @@
 /* ########################################## */
 
 /* THIRD EXAMPLE PART: Screen Templates */
-.container {
-    height: 100%;
+/* .container { */
+    /* height: 100%;
     display: grid;
     grid-gap: 3px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: 40px auto 40px;
-    grid-template-areas:
+    grid-template-areas: */
         /* . for empty area */
-        "m h h h h h h h h h h h"
-        "m c c c c c c c c c c c"
-        "m f f f f f f f f f f f";
-}
+        /* 'm h h h h h h h h h h h'
+        'm c c c c c c c c c c c'
+        'm f f f f f f f f f f f'; */
 
-.header {
+
+/* .header {
     grid-area: h;
 }
 
@@ -94,4 +94,13 @@
 
 .footer {
     grid-area: f;
+} */
+/* ######################################## */
+
+/* FOURTH EXAMPLE PART */
+.container {
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(6, 100px);
+    grid-template-rows: repeat(2, 100px);
 }
