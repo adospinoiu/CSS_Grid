@@ -31,7 +31,8 @@
 } */
 /* ###################################### */
 
-.container {
+/* SECOND EXAMPLE PART */
+/* .container {
     display: grid;
     grid-gap: 3px;
     grid-template-columns: repeat(12, 1fr);
@@ -48,7 +49,7 @@
     /* grid-column: 1 / span 2; */
     
     /* If you DON'T KNOW the number of columns you will eventually have */
-    grid-column: 1 / 11;
+    /* grid-column: 1 / 11;
 }
 
 .menu {
@@ -62,4 +63,35 @@
 
 .footer {
     grid-column: 1 / 11;
+} */ 
+/* ########################################## */
+
+/* THIRD EXAMPLE PART: Screen Templates */
+.container {
+    height: 100%;
+    display: grid;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 40px auto 40px;
+    grid-template-areas:
+        /* . for empty area */
+        "m h h h h h h h h h h h"
+        "m c c c c c c c c c c c"
+        "m f f f f f f f f f f f";
+}
+
+.header {
+    grid-area: h;
+}
+
+.menu {
+    grid-area: m;
+}
+
+.content {
+    grid-area: c;
+}
+
+.footer {
+    grid-area: f;
 }
