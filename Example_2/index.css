@@ -134,7 +134,7 @@
 /* ################################################## */
 
 /* #### SIXTH EXAMPLE PART: Named Lines */
-.container {
+/* .container {
     display: grid;
     height: 100%;
     grid-gap: 3px;
@@ -144,7 +144,7 @@
 
 .header {
     grid-column: main-start / main-end;
-    /* Can be re-written as */
+    /* #### Can be re-written as
     grid-column: main;
 }
 
@@ -152,13 +152,29 @@
 
 .content {
     grid-column: content-start / content-end;
-    /* Can be re-written as  either way below */
+    /* #### Can be re-written as  either way below 
     grid-column: content;
     grid-area: content;
 }
 
 .footer {
     grid-column: main-start / main-end;
-    /* Can be re-written as */
+    /* #### Can be re-written as
     grid-column: main;
+} */
+
+/* ############################################### */
+
+/* #### SEVENTH EXAMPLE PART: Justify-content and Align-Content */
+.container {
+    display: grid;
+    border: 1px solid black;
+    height: 100%;
+    grid-gap: 5px;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(2, 100px);
+    /* #### Horizontal (left-right) alignment control */
+    justify-content: center;
+    /* #### Vertical (top-bottom) alignment control */
+    align-content: center;
 }
